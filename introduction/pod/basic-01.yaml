@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp-piod-01
+  labels:
+    app: myapp
+spec:
+  containers:
+  - name: test-01
+    image: nkongkimo/spring-petclinic-cloud-gateway:tagname

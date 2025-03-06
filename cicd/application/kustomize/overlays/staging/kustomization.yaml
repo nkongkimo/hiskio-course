@@ -1,0 +1,7 @@
+namePrefix: staging-
+commonLabels:
+  owner: hwchiu
+bases:
+  - ../../base
+patches:
+  - replica_count.yaml

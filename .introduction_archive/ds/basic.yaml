@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: test-ds
+  labels:
+    app: nginx
+spec:
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+#      tolerations:
+#      - key: node-role.kubernetes.io/master
+#        effect: NoSchedule
+      containers:
+      - name: nginx-server
+        image: nginx

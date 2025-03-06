@@ -1,0 +1,9 @@
+❯ k get secrets myregistrykey -o yaml | k neat
+apiVersion: v1
+data:
+  .dockerconfigjson: eyJhdXRocyI6eyJnaXRodWIuY29tIjp7InVzZXJuYW1lIjoiYWRtaW4iLCJwYXNzd29yZCI6IjExMTEyMjIyIiwiZW1haWwiOiIxMTExQDExMTEuY29tIiwiYXV0aCI6IllXUnRhVzQ2TVRFeE1USXlNakk9In19fQ==
+kind: Secret
+metadata:
+  name: myregistrykey
+  namespace: default
+type: kubernetes.io/dockerconfigjson
